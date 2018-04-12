@@ -14,7 +14,7 @@ BN=BN.img;
 mycoord=load('BN_Atlas_246_coord.txt');
 myname=readtable('subregion_name.txt', 'delimiter', ' ');
 
-if 0 % generate CSV file
+if 1 % generate CSV file
     outfile='BN_Atlas_246_1.5mm_SPM.csv';
     fid=fopen(outfile, 'w');
     VOL=1.5^3/1000;
