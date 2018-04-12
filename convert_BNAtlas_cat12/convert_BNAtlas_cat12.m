@@ -6,6 +6,12 @@ function convert_BNAtlas_cat12
 % nmzuo@nlpr.ia.ac.cn
 % Institute of Automation, Chinese Academy of Sciences
 
+% CAUTION:
+% This file is only for generating the main body of the CSV/XML file,
+% so please manually copy the other contents from the existing template
+% e.g., ibsr.csv, labels_dartel_ibsr.xml .
+% April 12, 2018
+
 
 BN=load_nii('BN_Atlas_246_1.5mm_SPM.nii');
 nROI=length(unique(BN.img(:))) -1; % remove 0
